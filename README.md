@@ -26,7 +26,7 @@ Splitting time expiration into steps to simulate the value of the option at a pa
 
 <h3 align="center">T = time until expiration</h3>
 <h3 align="center">N = Number of Steps</h3>
-<h1 align="center"> ∆T = T/N </h1>
+<h1 align="center"> ∆T = $\frac{T}{N}$ </h1>
 
 ### 2. Exponential Growth/Decay 
 
@@ -36,8 +36,10 @@ Splitting time expiration into steps to simulate the value of the option at a pa
 <h1 align="center">U (up rate) = e<sup>σΔt</sup></h1>
 <h1 align="center">D (down rate) = e<sup>-σΔt</sup></h1>
 
-### 2. Iterative approach to price using nodes 
-​
+### 3. Iterative approach to price using nodes 
+<div>Using a standard binomial function:</div>
+<h1 align="center">S<sub> i,j </sub>​ = S0​ * u<sup> j</sup> * d<sup> i−j</sup></h1>
+<div>Where i = time step and j = number of upward moves</div>​
 
 ## 🛠️ Tech Stack
 * **Math** - Used to calculate prices
